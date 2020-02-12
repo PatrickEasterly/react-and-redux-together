@@ -10,7 +10,7 @@ import {
 // 0 to 1
 
 
-export function count(state, action) {
+export function count(state=0, action) {
     let newState = state;
     switch(action.type) {
         case INCREMENT:
