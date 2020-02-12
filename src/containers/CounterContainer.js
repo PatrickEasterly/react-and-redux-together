@@ -8,7 +8,7 @@ import { actionIncrement, actionDecrement, actionReset } from '../actions';
 // Describe how to translate redux state into react props
 function mapStateToProps(state) {
     return {
-        count: state.count
+        count: state
     }
 }
 
