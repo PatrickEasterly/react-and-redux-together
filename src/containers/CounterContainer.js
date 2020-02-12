@@ -26,3 +26,9 @@ function mapDispatchToProps(dispatch) {
         }
     }
 }
+
+const reduxConnector = connect(mapStateToProps, mapDispatchToProps);
+export default reduxConnector(Counter);
+
+// also written as 
+// export default connect(mapStateToProps, mapDispatchToProps)(Counter);
